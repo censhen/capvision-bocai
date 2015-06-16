@@ -2,12 +2,11 @@
 
 namespace app\modules\bocai\controllers;
 
-use yii\web\Controller;
-
-class DefaultController extends Controller
+class PostController extends \yii\web\Controller
 {
     public function actionIndex()
     {
         return $this->render('index');
     }
+
 }
