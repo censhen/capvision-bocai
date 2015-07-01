@@ -32,7 +32,7 @@ class Post extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['title', 'base_point', 'total_point'], 'required'],
+            [['title'], 'required'],
             [['description'], 'string'],
             [['base_point', 'entry_point', 'status', 'total_point', 'result_option_id'], 'integer'],
             [['title'], 'string', 'max' => 255]

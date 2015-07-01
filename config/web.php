@@ -10,6 +10,9 @@ $config = [
         'user' => [
             'class' => 'app\modules\user\Module',
         ],
+        'bocai' => [
+            'class' => 'app\modules\bocai\Module',
+        ],
     ],
     'components' => [
         'request' => [

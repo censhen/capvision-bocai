@@ -11,10 +11,10 @@ class m150616_054722_create_bocai_tables extends Migration
             'id' => Schema::TYPE_PK,
             'title' => Schema::TYPE_STRING . ' NOT NULL',
             'description' => Schema::TYPE_TEXT . ' DEFAULT NULL',
-            'base_point' => Schema::TYPE_INTEGER . ' NOT NULL',
-            'entry_point' => Schema::TYPE_INTEGER . ' NOT NULL DEFAULT 1',
+            'base_point' => Schema::TYPE_INTEGER . ' NOT NULL DEFAULT 1',
+            'entry_point' => Schema::TYPE_INTEGER . ' NOT NULL DEFAULT 0',
             'status' => Schema::TYPE_SMALLINT . ' NOT NULL DEFAULT 1',
-            'total_point' => Schema::TYPE_INTEGER . ' NOT NULL',
+            'total_point' => Schema::TYPE_INTEGER . ' NOT NULL DEFAULT 1',
             'result_option_id' => Schema::TYPE_INTEGER . ' DEFAULT NULL',
         ]);
 
